@@ -1,1 +1,11 @@
-body {margin: 0;}
+/* Default styles */ 
+body {
+    margin: 0;
+}
+
+/* Blocks */ 
+@import "blocks/header";
+@import "blocks/btn";
+
+/* Vendor libs */
+@import "vendor/slick";
