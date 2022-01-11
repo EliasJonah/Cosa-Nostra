@@ -7,13 +7,49 @@ body {
 .header {
     width: 100%;
     padding: 10px;
-    background-color: #333;
+    background-color: #1e1bc9;
+    box-shadow: 0 0 15px rgba(18, 18, 18, 0.3);
+}
+
+.header--fixed {
+    background-color: #121212;
 }
 
 .header__title {
     margin: 0;
     font-size: 36px;
     color: #fff;
+}
+
+.btn {
+    color: white;
+    background-color: #121212;
+    border-radius: 10px 15px;
+    box-shadow: 0 0 15px rgba(18, 18, 18, 0.3);
+}
+
+.btn:hover {
+    background-color: #f8f8f8;
+}
+
+.btn--red {
+    background-color: #e75757;
+}
+
+.btn--red:hover {
+    background-color: #e44141;
+}
+
+.btn--blue {
+    background-color: #2a2ace;
+}
+
+.btn--blue:hover {
+    background-color: #2626b9;
+}
+
+.btn__text {
+    text-align: center;
 }
 
 /* Vendor libs */

@@ -1,3 +1,22 @@
 .btn {
-    
+    color: white;
+    background-color: $black;
+    border-radius: $radius;
+    box-shadow: $shadow;
+
+    &:hover {
+        background-color: $gray;
+    }
+
+    &--red {
+        @include btn(#e75757)
+    }
+
+    &--blue {
+        @include btn(#2a2ace)
+    }
+}
+
+.btn__text {
+    text-align: center;
 }

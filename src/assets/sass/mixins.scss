@@ -1,0 +1,11 @@
+@mixin btn($bg) {
+    background-color: $bg;
+
+    &:hover {
+        background-color: darken($bg, 5%);
+    }
+}
+
+@mixin btn_shadow() {
+    box-shadow: $shadow;
+}
