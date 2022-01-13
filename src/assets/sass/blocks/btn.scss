@@ -1,22 +1,25 @@
 .btn {
-    color: white;
-    background-color: $black;
-    border-radius: $radius;
-    box-shadow: $shadow;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1rem 2rem;
+
+    background: none;
+    border: 0;
+    border-radius: $radius_sm;
+
+    font-size: 1rem;
+    color: $black;
+    line-height: 1.1;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+
+    &--pink {
+        border: 2px solid $pink;
+    }
 
     &:hover {
-        background-color: $gray;
+        color: $white;
+        background-color: $pink;
     }
-
-    &--red {
-        @include btn(#e75757)
-    }
-
-    &--blue {
-        @include btn(#2a2ace)
-    }
-}
-
-.btn__text {
-    text-align: center;
 }

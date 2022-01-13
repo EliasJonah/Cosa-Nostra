@@ -17,6 +17,8 @@ body {
     font-size: 1rem;
     line-height: 1.5;
 
+    overflow: hidden;
+
 }
 
 *,
@@ -41,7 +43,15 @@ body {
 
 
 /* Blocks */
+@import 'blocks/page';
 @import 'blocks/header';
 @import 'blocks/logo';
 @import 'blocks/nav';
 @import 'blocks/lang';
+@import 'blocks/content';
+@import 'blocks/intro';
+@import 'blocks/btn';
+@import 'blocks/contacts';
+@import 'blocks/author';
+@import 'blocks/circle';
+@import 'blocks/footer';
