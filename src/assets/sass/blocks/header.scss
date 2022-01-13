@@ -1,16 +1,14 @@
 .header {
-    width: 100%;
-    padding: 10px;
-    background-color: $primary;
-    box-shadow: $shadow;
-
-    &--fixed {
-        background-color: $black;
-    }
+    margin-top: 2rem;
 }
 
-.header__title {
-    margin: 0;
-    font-size: 36px;
-    color: #fff;
+.header__inner {
+    padding: .8rem 1.4rem;
+    background-color: $white;
+    border-radius: $radius;
+    box-shadow: $shadow;
+}
+
+.header__row {
+    align-items: center;
 }
