@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -17,7 +17,40 @@
     
     <title>HomePage</title></head>
 <body>
-
+    <!-- Modal -->
+    <div class="modal__open">
+        <div class="modal__window">
+            <div class="modal__inner">
+                <div class="modal__close">×</div>
+                <h1 class="modal__title">Оставить заявку</h1>
+                <h2 class="modal__subtitle">Заполните форму ниже и я свяжусь с вами в ближайшее время</h2>
+                
+        
+                <div class="form__inner">
+                    <form class="modal__form" action="#">
+                        <input class="modal__input" type="text" name="Введите имя" value="">
+                    </form>
+            
+                    <form class="modal__form" action="#">
+                        <input class="modal__input" type="text" name="Введите имя" value="">
+                    </form>
+            
+                    <form class="modal__form" action="#">
+                        <input class="modal__input" type="text" name="Введите имя" value="">
+                    </form>
+                </div>
+        
+                <div class="modal__footer">
+                    <a class="btn btn--pink" href="#">Оставить заявку</a>
+        
+                    <div class="modal__contacts">
+                        <a class="contacts__link" href="tel:+7891123345">+789-112-3345</a>
+                        <a class="contacts__link" href="mailto:hello@inweb.com">hello@inweb.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <svg style="display: none;">
     
         <symbol id="vk" viewbox="0 0 548.358 548.358">
@@ -180,7 +213,6 @@
                 </div>
             </div>
         </footer>    </div>
-    
 
     <script src="assets/js/app.min.js"></script>
 </body>

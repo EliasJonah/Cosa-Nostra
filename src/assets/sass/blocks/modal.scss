@@ -1,0 +1,73 @@
+.modal__open {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.modal__window {
+    width: 500px;
+    height: 400px;
+    color: $black;
+
+    position: fixed;
+    background:$gray;
+    z-index: 6;
+    
+    border-radius: $radius_sm;
+    top: 100px;
+    right: 450px;
+}
+
+.modal__inner {
+    margin: 2rem 2.1rem;
+}
+
+.modal__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: $pink;
+}
+
+.modal__subtitle {
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.modal__form {
+    margin-bottom: .9rem;
+}
+
+.modal__input {
+    width: 430px;
+    height: 45px;
+}
+
+.modal__footer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal__contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__close {
+    display: block;
+    position: absolute;
+
+    font-size: 70px;
+    font-weight: 200;
+    color: $gray;
+    cursor: pointer;
+
+    top: -70px;
+    right: -40px;
+
+    &:hover {
+        color: $gray_dark;
+    }
+}
