@@ -21,22 +21,22 @@
     <div class="modal__open">
         <div class="modal__window">
             <div class="modal__inner">
-                <div class="modal__close">×</div>
+                <div data-close class="modal__close">×</div>
                 <h1 class="modal__title">Оставить заявку</h1>
-                <h2 class="modal__subtitle">Заполните форму ниже и я свяжусь с вами в ближайшее время</h2>
+                <h2 class="modal__subtitle">Заполните форму ниже и я свяжусь с вами в ближайшее время!</h2>
                 
         
                 <div class="form__inner">
                     <form class="modal__form" action="#">
-                        <input class="modal__input" type="text" name="Введите имя" value="">
+                        <input class="modal__input" type="text"  placeholder="Ваше имя">
                     </form>
             
                     <form class="modal__form" action="#">
-                        <input class="modal__input" type="text" name="Введите имя" value="">
+                        <input class="modal__input" type="e-mail" placeholder="Ваш e-mail">
                     </form>
             
                     <form class="modal__form" action="#">
-                        <input class="modal__input" type="text" name="Введите имя" value="">
+                        <input class="modal__input" type="tel" placeholder="Ваш телефон">
                     </form>
                 </div>
         
@@ -164,7 +164,7 @@
             
                     <div class="row">
                         <div class="col-lg-3">
-                            <a class="btn btn--pink" href="#">Оставить заявку</a>
+                            <button data-modal class="btn btn--pink">Оставить заявку</button>
                         </div>
             
                         <div class="col-lg-9">
