@@ -1729,7 +1729,7 @@ body {
 
 .intro__text {
     font-size: 1.2rem;
-    color: #cdcdcd;
+    color: #aaaaaa;
 }
 
 .intro__title {
@@ -1752,9 +1752,12 @@ body {
 }
 
 .btn {
+    width: 200px;
+    height: 50px;
+    padding: 1.1rem 0 1rem;
     display: inline-block;
     vertical-align: top;
-    padding: 1.1rem 2.2rem;
+    text-align: center;
     background: none;
     border: 0;
     border-radius: 5px;
@@ -1978,7 +1981,51 @@ body {
 }
 
 .modal__close:hover {
-    color: #cdcdcd;
+    color: #aaaaaa;
+}
+
+.content__title {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.services {
+    margin-bottom: 2rem;
+}
+
+.services__item {
+    padding: 1.2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.services__item {
+    height: 100%;
+    position: relative;
+}
+
+.services__icon {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 1rem;
+    left: 1.2rem;
+}
+
+.services__title {
+    padding-top: 0.5rem;
+    padding-left: 5rem;
+    font-size: 1.4rem;
+    color: #121212;
+    font-weight: 500;
+}
+
+.services__text {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #121212;
+    font-weight: 400;
 }
 
 .footer {

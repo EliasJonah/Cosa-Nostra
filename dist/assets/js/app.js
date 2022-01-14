@@ -1,5 +1,5 @@
 window.addEventListener('DOMContentLoaded', () => {
-    // Modal
+    /////////// Modal
     const modalTrigger = document.querySelector('[data-modal]'),
           modal = document.querySelector('.modal__open'),
           modalCloseBtn = document.querySelector('[data-close]');
@@ -28,7 +28,12 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    document.addEventListener('keydown', () => {
-        closeModal();
+    document.addEventListener('keydown', (e) => {
+        if (e.code === "Escape") {
+            closeModal();
+        }
     })
+
+    
+    /////////// Slider
 })
