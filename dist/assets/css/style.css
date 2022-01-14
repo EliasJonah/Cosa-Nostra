@@ -2028,6 +2028,45 @@ body {
     font-weight: 400;
 }
 
+.portfolio {
+    height: 325px;
+    display: flex;
+}
+
+.portfolio__item {
+    margin-right: 1rem;
+    position: relative;
+    background-color: #000;
+}
+
+.portfolio__item:hover .poster {
+    opacity: 0.3;
+}
+
+.portfolio__item:hover .portfolio__title {
+    display: block;
+}
+
+.poster {
+    background-color: #fff;
+    height: 325px;
+    width: auto;
+    transition: opacity 0.1s linear;
+}
+
+.portfolio__title {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: #fff;
+    pointer-events: none;
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
 .footer {
     padding-bottom: 2rem;
 }

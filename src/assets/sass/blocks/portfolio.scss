@@ -1,0 +1,43 @@
+.portfolio {
+    height: 325px;
+    display: flex;
+}
+
+.portfolio__item {
+    margin-right: 1rem;
+    position: relative;
+
+    background-color: #000;
+
+    &:hover {
+        .poster {
+            opacity: .3;
+        }
+
+        .portfolio__title {
+            display: block;
+        }
+    }
+}
+
+
+.poster {
+    background-color: $white;
+    height: 325px;
+    width: auto;
+    transition: opacity .1s linear;
+}
+
+.portfolio__title {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
+    color: $white;
+    pointer-events: none;
+    display: none;
+
+    position: absolute;
+    bottom: -0;
+    left: 0;
+    z-index: 1;
+}
