@@ -51,27 +51,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
     let offset = 0;
 
-    slidesField.style.width = '677px';
+    try {
+        slidesField.style.width = '677px';
+    } catch(e) {
+        console.error(e);
+    }
+    
 
-    next.addEventListener('click', () => {
-        if (offset == +width.slice(0, width.length - 2) * 3) {
-            offset = 0;
-        } else {
-            offset += +width.slice(0, width.length - 2);
-        }
+    try {
+        next.addEventListener('click', () => {
+            if (offset == +width.slice(0, width.length - 2) * 3) {
+                offset = 0;
+            } else {
+                offset += +width.slice(0, width.length - 2);
+            }
+    
+            slidesField.style.transform = `translateX(-${offset}px)`;
+        })
+    } catch(e) {
+        console.error(e);
+    }
 
-        slidesField.style.transform = `translateX(-${offset}px)`;
-    })
-
-    prev.addEventListener('click', () => {
-        if (offset == 0) {
-            offset = +width.slice(0, width.length - 2) * 3;
-        } else {
-            offset -= +width.slice(0, width.length - 2);
-        }
-
-        slidesField.style.transform = `translateX(-${offset}px)`;
-    })
+    try {
+        prev.addEventListener('click', () => {
+            if (offset == 0) {
+                offset = +width.slice(0, width.length - 2) * 3;
+            } else {
+                offset -= +width.slice(0, width.length - 2);
+            }
+    
+            slidesField.style.transform = `translateX(-${offset}px)`;
+        })
+    } catch(e) {
+        console.error(e);
+    }
 
     
 

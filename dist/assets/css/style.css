@@ -1970,7 +1970,11 @@ body {
 }
 
 .modal__close {
-    display: block;
+    padding: 0;
+    margin: 0;
+    height: 45px;
+    width: 45px;
+    display: inline;
     position: absolute;
     font-size: 70px;
     font-weight: 200;
