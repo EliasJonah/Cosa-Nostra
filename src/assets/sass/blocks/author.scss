@@ -4,4 +4,12 @@
     right: -7rem;
     bottom: 0;
     z-index: 2;
+
+    @media (max-width: 1150px) {
+        right: -14rem;
+    }
+
+    @media (max-width: 1070px) {
+        display: none;
+    }
 }

@@ -1727,6 +1727,13 @@ body {
     justify-content: center;
 }
 
+@media (max-width: 1150px) {
+    .content {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+
 .intro__text {
     font-size: 1.2rem;
     color: #aaaaaa;
@@ -1826,6 +1833,18 @@ body {
     z-index: 2;
 }
 
+@media (max-width: 1150px) {
+    .author {
+        right: -14rem;
+    }
+}
+
+@media (max-width: 1070px) {
+    .author {
+        display: none;
+    }
+}
+
 .circle {
     width: 450px;
     height: 450px;
@@ -1838,6 +1857,18 @@ body {
     right: 4rem;
     bottom: 1rem;
     z-index: 1;
+}
+
+@media (max-width: 1150px) {
+    .circle {
+        right: 0;
+    }
+}
+
+@media (max-width: 1070px) {
+    .circle {
+        display: none;
+    }
 }
 
 @-webkit-keyframes circleRadius {
@@ -2133,4 +2164,11 @@ body {
 
 .footer {
     padding-bottom: 2rem;
+}
+
+@media (max-width: 1150px) {
+    .footer {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
 }

@@ -12,6 +12,14 @@
     right: 4rem;
     bottom: 1rem;
     z-index: 1;
+
+    @media (max-width: 1150px) {
+        right: 0;
+    }
+
+    @media (max-width: 1070px) {
+        display: none;
+    }
 }
 
 @keyframes circleRadius {
