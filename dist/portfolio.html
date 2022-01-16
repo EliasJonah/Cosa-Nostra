@@ -113,11 +113,18 @@
             </g>
         </symbol>
     
-        <symbol id="close" viewbox="0 0 15.642 15.642">
+        <symbol id="left-arrow" viewbox="0 0 512 512">
             <g>
-                <path fill-rule="evenodd" d="M8.882,7.821l6.541-6.541c0.293-0.293,0.293-0.768,0-1.061  c-0.293-0.293-0.768-0.293-1.061,0L7.821,6.76L1.28,0.22c-0.293-0.293-0.768-0.293-1.061,0c-0.293,0.293-0.293,0.768,0,1.061  l6.541,6.541L0.22,14.362c-0.293,0.293-0.293,0.768,0,1.061c0.147,0.146,0.338,0.22,0.53,0.22s0.384-0.073,0.53-0.22l6.541-6.541  l6.541,6.541c0.147,0.146,0.338,0.22,0.53,0.22c0.192,0,0.384-0.073,0.53-0.22c0.293-0.293,0.293-0.768,0-1.061L8.882,7.821z"/>
+                <path d="M353,450a15,15,0,0,1-10.61-4.39L157.5,260.71a15,15,0,0,1,0-21.21L342.39,54.6a15,15,0,1,1,21.22,21.21L189.32,250.1,363.61,424.39A15,15,0,0,1,353,450Z"/>
             </g>
         </symbol>
+    
+        <symbol id="right-arrow" viewbox="0 0 512 512">
+            <g>
+                <path d="M202.1,450a15,15,0,0,1-10.6-25.61L365.79,250.1,191.5,75.81A15,15,0,0,1,212.71,54.6l184.9,184.9a15,15,0,0,1,0,21.21l-184.9,184.9A15,15,0,0,1,202.1,450Z"/>
+            </g>
+        </symbol>
+    
     
     </svg>
     <div class="page">
@@ -156,65 +163,76 @@
         <div class="content">
             
             <div class="container">
-                <h1 class="content__title">Мои работы</h1>
+                <h1 class="portfolio__title">Мои работы</h1>
             
                 <div class="portfolio">
             
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                            <img class="poster" src="assets/img/portfolio/wick.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Джон Уик</div>
+                    <svg class="portfolio__arrow__left">
+                        <use xlink:href="#left-arrow"></use>
+                    </svg>
+                    <div class="portfolio__items">
+                        <div class="portfolio__items__inner">
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                    <img class="poster" src="assets/img/portfolio/wick.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Джон Уик</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                    <img class="poster" src="assets/img/portfolio/kostya.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Константин</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                <img class="poster" src="assets/img/portfolio/neo.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Матрица</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                    <img class="poster" src="assets/img/portfolio/lawyer.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Адвокат дъявола</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                <img class="poster" src="assets/img/portfolio/speed.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Скорость</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                    <img class="poster" src="assets/img/portfolio/jonni.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">На гребне волны</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                    <img class="poster" src="assets/img/portfolio/idaho.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Мой личный штат Айдахо</div>
+                            </div>
+                
+                            <div class="portfolio__item">
+                                <div class="poster__link" href="#" target="_blank">
+                                <img class="poster" src="assets/img/portfolio/liaison.jpg" alt="">
+                                </div>
+                                <div class="portfolio__name">Опасные связи</div>
+                            </div>
+                        </div>
                     </div>
             
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                            <img class="poster" src="assets/img/portfolio/kostya.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Константин</div>
-                    </div>
-            
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                        <img class="poster" src="assets/img/portfolio/neo.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Матрица</div>
-                    </div>
-            
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                            <img class="poster" src="assets/img/portfolio/lawyer.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Адвокат дъявола</div>
-                    </div>
-            
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                        <img class="poster" src="assets/img/portfolio/speed.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Скорость</div>
-                    </div>
-            
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                            <img class="poster" src="assets/img/portfolio/jonni.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">На гребне волны</div>
-                    </div>
-            
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                            <img class="poster" src="assets/img/portfolio/idaho.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Мой личный штат Айдахо</div>
-                    </div>
-            
-                    <div class="portfolio__item">
-                        <a class="poster__link" href="#" target="_blank">
-                        <img class="poster" src="assets/img/portfolio/liaison.jpg" alt="">
-                        </a>
-                        <div class="portfolio__title">Опасные связи</div>
-                    </div>
+                    <svg class="portfolio__arrow__right">
+                        <use xlink:href="#right-arrow"></use>
+                    </svg>
                 </div>
             </div>
         </div>
@@ -246,6 +264,6 @@
             </div>
         </footer>    </div>
 
-    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>

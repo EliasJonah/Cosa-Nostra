@@ -14,9 +14,14 @@ window.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'none';
     }
 
-    modalTrigger.addEventListener('click', () => {
-        openModal();
-    })
+    try {
+        modalTrigger.addEventListener('click', () => {
+            openModal();
+        })
+    } catch(e) {
+        console.log(e);
+    }
+
 
     modalCloseBtn.addEventListener('click', () => {
         closeModal();
@@ -36,4 +41,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
     
     /////////// Slider
-})
+
+    const slides = document.querySelectorAll('.portfolio__item'),
+          prev = document.querySelector('.portfolio__arrow__left'),
+          next = document.querySelector('.portfolio__arrow__right'),
+          slidesWrapper = document.querySelector('.portfolio__items'),
+          slidesField = document.querySelector('.portfolio__items__inner'),
+          width = '225.5px';
+
+    let offset = 0;
+
+    slidesField.style.width = '677px';
+
+    next.addEventListener('click', () => {
+        if (offset == +width.slice(0, width.length - 2) * 3) {
+            offset = 0;
+        } else {
+            offset += +width.slice(0, width.length - 2);
+        }
+
+        slidesField.style.transform = `translateX(-${offset}px)`;
+    })
+
+    prev.addEventListener('click', () => {
+        if (offset == 0) {
+            offset = +width.slice(0, width.length - 2) * 3;
+        } else {
+            offset -= +width.slice(0, width.length - 2);
+        }
+
+        slidesField.style.transform = `translateX(-${offset}px)`;
+    })
+
+    
+
+
+
+});

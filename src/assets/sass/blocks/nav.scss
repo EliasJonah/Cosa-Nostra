@@ -12,7 +12,7 @@
 
     border-radius: 20px;
 
-    transition: background .1s linear;
+    transition: background-color .1s linear;
 
     &:hover {
         background-color: darken($gray, 3%);
