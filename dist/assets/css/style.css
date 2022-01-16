@@ -2068,6 +2068,8 @@ body {
 }
 
 .poster {
+    position: relative;
+    z-index: 7;
     background-color: #fff;
     height: 320px;
     width: auto;
@@ -2090,17 +2092,18 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 2;
+    z-index: 12;
 }
 
 .portfolio__arrow__left {
+    width: 53px;
     height: 3.5rem;
     fill: #aaaaaa;
     cursor: pointer;
     position: absolute;
-    z-index: 5;
+    z-index: 1;
     top: 40%;
-    left: -15%;
+    left: -5%;
     transition: fill 0.1s linear;
 }
 
@@ -2109,13 +2112,14 @@ body {
 }
 
 .portfolio__arrow__right {
+    width: 53px;
     height: 3.5rem;
     fill: #aaaaaa;
     cursor: pointer;
     position: absolute;
-    z-index: 6;
+    z-index: 2;
     top: 45%;
-    right: -15%;
+    right: -5%;
     transition: fill 0.1s linear;
 }
 
